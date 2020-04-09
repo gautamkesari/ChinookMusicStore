@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SupplyChain.API.AspNetCore.Contexts;
 
 namespace ChinookMusicStore.API.AspNetCore.Controllers
 {
@@ -11,6 +12,7 @@ namespace ChinookMusicStore.API.AspNetCore.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        SampleContext _context;
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -18,14 +20,16 @@ namespace ChinookMusicStore.API.AspNetCore.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, SampleContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            var test=_context.Genres.ToList();
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
