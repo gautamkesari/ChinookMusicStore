@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace SupplyChain.Web.AspNetCore.Repositories
+namespace ChinookMusicStore.Web.AspNetCore.Utilities
 {
     public interface IRESTClient
     {
