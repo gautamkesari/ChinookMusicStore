@@ -59,10 +59,12 @@ namespace SupplyChain.API.AspNetCore.Contexts
             //modelBuilder.Entity<SupplierSector>().HasOne(x => x.Sector).WithMany(y => y.SupplierSectors);
 
             modelBuilder.Entity<Genre>().HasKey(x => x.GenreId);
+            modelBuilder.Entity<Customer>().HasKey(x => x.CustomerId);
 
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }

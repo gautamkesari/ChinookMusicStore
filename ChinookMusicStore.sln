@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChinookMusicStore.Web.AspNetCore", "src\ChinookMusicStore.Web.AspNetCore\ChinookMusicStore.Web.AspNetCore.csproj", "{E1414032-40D4-4668-BC65-11D14419218A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookMusicStore.API.AspNetCore", "src\ChinookMusicStore.API.AspNetCore\ChinookMusicStore.API.AspNetCore.csproj", "{D34AC687-F0AB-4599-AA7A-97B8736F6BC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChinookMusicStore.API.AspNetCore", "src\ChinookMusicStore.API.AspNetCore\ChinookMusicStore.API.AspNetCore.csproj", "{D34AC687-F0AB-4599-AA7A-97B8736F6BC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
